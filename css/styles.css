@@ -18,7 +18,7 @@ h3{
 }
 
 .container-fluid{
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 .feature-p{
   color: #8f8f8f;
@@ -51,12 +51,17 @@ body{
 }
 /* Title Image */
 .title_image{
-  width: 60%;
-  transform: rotate(20deg);
+  width: 23%;
+  transform: rotate(25deg);
+position: absolute;
+right: 23%;
 }
 /* Features */
 #features{
   padding: 7% 15%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
 }
 .logoAwesome{
   color: #EF8172;
@@ -92,13 +97,38 @@ color: white;
 .carousel-item{
 padding: 7% 15%;
 }
+/* Pricing Section*/
+#pricing{
+  text-align: center;
+  padding:100px;
+}
+.pricing-column{
+
+  padding: 3% 2%;
+}
 /* Press */
 #press{
   background-color: #EF8172;
 text-align: center;
-padding-bottom: : 3%;
+padding-bottom: 3%;
 }
 .press-logo{
   width: 15%;
   margin: 20px 20px 50px;
+}
+/* Media Query */
+@media (max-width: 991px) {
+#title{
+  text-align: center;
+
+}
+
+.title_image{
+
+  position: static;
+
+ transform: rotate(0);
+  width: 100%;
+  margin-left: 50%;
+}
 }
